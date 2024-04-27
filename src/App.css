@@ -23,9 +23,10 @@ body {
 }
 
 .todo-wrapper h1{
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: white;
   text-align: center;
+  margin-bottom: 35px;
 }
 
 .todo-form{
@@ -56,28 +57,49 @@ body {
   border-radius: 0 4px 4px 0;
 }
 
+.todo-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
 .todo {
   display: flex;
   justify-content: space-between;
   background-color: rgba(114, 43, 255, 0.868);
   color: white;
   border-radius: 4px;
-  padding: 6px;
-  margin-bottom: 8px;
+  padding: 6px 8px;
 }
 
-.todo p {
+.todo-name-container{
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+
+.todo-name {
   margin: 0;
-  padding-left: 8px;
   cursor: pointer;
+}
+
+.todo-checkbox {
+  accent-color: rgb(27, 26, 67);
 }
 
 .icons{
-  padding-right: 8px;
   display: flex;
   align-items: center;
-  gap: 4px;
+  gap: 8px;
   cursor: pointer;
+}
+
+.icons svg {
+  transition:0.3s color ease;
+}
+
+.icons svg:hover{
+  color: rgb(27, 26, 67);
 }
 
 .completed{
